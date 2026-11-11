@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>To-do App</h2>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="What do you want to do?" id="add-task" class="add-task">
+            <button id="add-btn" class="add-btn">+</button>
+        </div>
+        <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="completed">Completed</button>
+            <button class="filter" data-filter="pending">Pending</button>
+        </div>
+        <div class="to-dos">
+            <div class="hidden">
+                <p>There's nothing here to see</p>
+            </div>
+            <ul id="todo-list">
+<!--                 <li> <div><input type="checkbox">Sweep</div> <span><button class="delete">X</button></span></li>
+                <li> <input type="checkbox">Talk</li> -->
+            </ul>
+        </div>
+        <div class="footer">
+            <span class="items-left" id="items-left">
+            </span>
+        </div>
+    </div>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
